@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main (){
+	float a,b,hasil;
+	char aritmatika;
+	
+	cout << "KALKULATOR PAKE SWITCH CASE NIH" << endl;
+	
+	cout << "a = ";
+	cin >> a;
+	cout << "aritmatika :";
+	cin >> aritmatika;
+	cout << "b = ";
+	cin >> b;
+	
+	switch (aritmatika){
+		case '+':
+			hasil = a + b;
+			cout <<"Hasil operasi dari "<< a <<" + "<< b <<" = " << hasil << endl;
+		case '-':
+			hasil = a - b;
+			cout <<"Hasil operasi dari "<< a <<" - "<< b <<" = " << hasil << endl;
+		case '*':
+			hasil = a * b;
+			cout <<"Hasil operasi dari "<< a <<" * "<< b << " = "<< hasil << endl;
+		case '/':
+			hasil = a / b;
+			cout <<"Hasil operasi dari "<< a <<" / "<< b << " = "<< hasil << endl;
+		default :
+			cout << "Operasi yang anda masukkan salah."<<endl;
+	}
+	cout<<"TERIMA KASIH";
+	return 0;
+}
